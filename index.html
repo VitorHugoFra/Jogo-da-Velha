@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <center><h1>Jogo da Velha</h1></center> 
+
+    <div class='game'>
+        <button id="Button" onclick="iniciar()">Iníciar</button>
+         <!-- <ul class="payment-methods">
+            <li class="payment-method paypal">
+                <input name="payment_methods" type="radio" id="paypal" >
+                <label for="paypal">X</label>
+            </li>
+                  
+            <li class="payment-method pagseguro">
+                <input name="payment_methods" type="radio" id="pagseguro">
+                <label for="pagseguro">O</label>
+            </li>   
+        </ul>  -->
+        
+        
+    </div>
+
+    <button onclick="iniciar()">Reiniciar</button>
+    
+
+    <script src="js/tic-tac-toe.js"></script>
+    <script>
+        function iniciar(){
+            tic_tac_toe.init( document.querySelector('.game'));
+            tic_tac_toe.start();
+            
+        }
+
+    </script>
+    
+</body>
+</html>

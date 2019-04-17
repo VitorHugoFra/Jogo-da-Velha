@@ -1,0 +1,86 @@
+.game {
+  width: 600px;
+	height: 600px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.game > div {
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Button{
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: bold; 
+  width: 100%;
+  height: 10%;
+  margin-left: 100%;
+  margin-top: 160%;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px; 
+  
+}
+.payment-methods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods:after {
+  content: "";
+  clear: both;
+}
+
+.payment-method {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  float: left;
+  height: 70px;
+  position: relative;
+  width: 120px;
+}
+
+.payment-method + .payment-method {
+  margin-left: 25px;
+}
+.payment-method label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
+.pagseguro label {
+  
+  background-image: url(index.png);
+}
+
+.paypal label {
+  background-image: url(index1.png);
+}
+
+.payment-methods input:focus + label {
+  outline: 2px dotted #21b4d0;
+}
+.payment-methods input:checked + label {
+  outline: 4px solid #21b4d0;
+}
